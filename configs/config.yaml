@@ -1,0 +1,66 @@
+# 服务器配置
+server:
+  port: 8080
+  mode: release  # debug, release
+  read_timeout: 30s
+  write_timeout: 30s
+
+# 数据库配置
+database:
+  host: localhost
+  port: 3306
+  user: root
+  password: ""
+  name: membership
+  charset: utf8mb4
+  max_idle_conns: 10
+  max_open_conns: 100
+  conn_max_lifetime: 1h
+  log_level: warn  # silent, error, warn, info
+
+# Redis配置
+redis:
+  addr: localhost:6379
+  password: ""
+  db: 0
+  pool_size: 50
+  min_idle_conns: 10
+  dial_timeout: 5s
+  read_timeout: 3s
+  write_timeout: 3s
+
+# RabbitMQ配置
+rabbitmq:
+  url: amqp://guest:guest@localhost:5672/
+  prefetch_count: 10
+  reconnect_delay: 5
+  publish_retry: 3
+  consume_retry: 3
+  heartbeat_second: 60
+
+# 微信配置
+wechat:
+  app_id: ""
+  app_secret: ""
+  mch_id: ""
+  api_key: ""
+  notify_url: "https://yourdomain.com/api/callback/wechat-pay"
+  template_id: ""
+  message_rate_sec: 20
+
+# JWT配置
+jwt:
+  secret: "your-secret-key-change-in-production"
+  expire_time: 168h      # 7天
+  admin_expire_time: 24h # 1天
+  issuer: "membership-system"
+
+# 日志配置
+log:
+  level: info  # debug, info, warn, error
+  format: json # json, console
+  output_path: logs/app.log
+  max_size: 100     # MB
+  max_backups: 30
+  max_age: 30       # days
+  compress: true

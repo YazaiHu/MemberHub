@@ -1,0 +1,60 @@
+# 开发环境配置
+server:
+  port: 8080
+  mode: debug
+  read_timeout: 30s
+  write_timeout: 30s
+
+database:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: "root"
+  name: membership_dev
+  charset: utf8mb4
+  max_idle_conns: 5
+  max_open_conns: 20
+  conn_max_lifetime: 1h
+  log_level: info
+
+redis:
+  addr: 127.0.0.1:6379
+  password: ""
+  db: 0
+  pool_size: 10
+  min_idle_conns: 2
+  dial_timeout: 5s
+  read_timeout: 3s
+  write_timeout: 3s
+
+rabbitmq:
+  url: amqp://guest:guest@127.0.0.1:5672/
+  prefetch_count: 5
+  reconnect_delay: 5
+  publish_retry: 3
+  consume_retry: 3
+  heartbeat_second: 60
+
+wechat:
+  app_id: "your_dev_app_id"
+  app_secret: "your_dev_app_secret"
+  mch_id: ""
+  api_key: ""
+  notify_url: "http://127.0.0.1:8080/api/callback/wechat-pay"
+  template_id: ""
+  message_rate_sec: 5
+
+jwt:
+  secret: "dev-secret-key"
+  expire_time: 168h
+  admin_expire_time: 24h
+  issuer: "membership-system-dev"
+
+log:
+  level: debug
+  format: console
+  output_path: logs/app_dev.log
+  max_size: 50
+  max_backups: 7
+  max_age: 7
+  compress: false

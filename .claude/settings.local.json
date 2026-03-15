@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(go build:*)",
+      "Bash(docker ps:*)",
+      "Bash(mysql:*)",
+      "Bash(docker exec:*)",
+      "Bash(COMPILATION_FIXES.md:*)",
+      "Bash(chmod +x:*)",
+      "Bash(curl:*)",
+      "Bash(__NEW_LINE_3403eb53cac391cd__ echo:*)",
+      "Bash(__NEW_LINE_8cfaad6390928a13__ curl:*)",
+      "Bash(./test_system.sh:*)",
+      "Bash(/tmp/analyze_height.md:*)",
+      "Bash(/tmp/check_icons.js:*)",
+      "Bash(find .:*)",
+      "Bash(go mod:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

@@ -67,3 +67,11 @@ yarn-error.log*
 # Frontend build output
 web/admin/dist/
 web/*/dist/
+
+# Vite cache
+.vite/
+web/admin/.vite/
+web/*/.vite/
+
+# Claude Code local settings
+.claude/

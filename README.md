@@ -80,6 +80,58 @@
 
 ---
 
+## 🎨 界面预览
+
+<div align="center">
+
+### 管理后台界面
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3 align="center">仪表板</h3>
+      <img src="docs/images/screenshots/dashboard.png" alt="仪表板" style="border: 1px solid #ddd; border-radius: 4px;">
+    </td>
+    <td width="50%">
+      <h3 align="center">会员管理</h3>
+      <img src="docs/images/screenshots/member.png" alt="会员管理" style="border: 1px solid #ddd; border-radius: 4px;">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">门店管理</h3>
+      <img src="docs/images/screenshots/store.png" alt="门店管理" style="border: 1px solid #ddd; border-radius: 4px;">
+    </td>
+    <td width="50%">
+      <h3 align="center">积分管理</h3>
+      <img src="docs/images/screenshots/point.png" alt="积分管理" style="border: 1px solid #ddd; border-radius: 4px;">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">充值管理</h3>
+      <img src="docs/images/screenshots/charge.png" alt="充值管理" style="border: 1px solid #ddd; border-radius: 4px;">
+    </td>
+    <td width="50%">
+      <h3 align="center">优惠券管理</h3>
+      <img src="docs/images/screenshots/coupon.png" alt="优惠券管理" style="border: 1px solid #ddd; border-radius: 4px;">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <h3 align="center">促销管理</h3>
+      <img src="docs/images/screenshots/promotion.png" alt="促销管理" style="border: 1px solid #ddd; border-radius: 4px; max-width: 80%;">
+    </td>
+  </tr>
+</table>
+
+> 💡 **提示**：所有界面均为实际运行截图，展示完整的管理后台功能。
+> 📊 **统计**：7 张高清截图，总计 1.3MB，已优化压缩。
+
+</div>
+
+---
+
 ## 📖 项目简介
 
 MemberHub（会员通）是一个专为连锁门店设计的统一会员管理系统，支持跨店积分共享、充值营销、优惠券推送等核心功能。
